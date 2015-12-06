@@ -13,8 +13,7 @@
 		40A956FE1C146DB200AF177E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A956FC1C146DB200AF177E /* Main.storyboard */; };
 		40A957001C146DB200AF177E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40A956FF1C146DB200AF177E /* Assets.xcassets */; };
 		40A957031C146DB200AF177E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40A957011C146DB200AF177E /* LaunchScreen.storyboard */; };
-		40A9570E1C146DB200AF177E /* NBCropperImageViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A9570D1C146DB200AF177E /* NBCropperImageViewControllerTests.m */; };
-		40A957191C146DB200AF177E /* NBCropperImageViewControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A957181C146DB200AF177E /* NBCropperImageViewControllerUITests.m */; };
+		40A957381C14859E00AF177E /* NBImageCropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A957371C14859E00AF177E /* NBImageCropperViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +45,9 @@
 		40A957021C146DB200AF177E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40A957041C146DB200AF177E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A957091C146DB200AF177E /* NBCropperImageViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBCropperImageViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40A9570D1C146DB200AF177E /* NBCropperImageViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBCropperImageViewControllerTests.m; sourceTree = "<group>"; };
-		40A9570F1C146DB200AF177E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40A957141C146DB200AF177E /* NBCropperImageViewControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NBCropperImageViewControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		40A957181C146DB200AF177E /* NBCropperImageViewControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NBCropperImageViewControllerUITests.m; sourceTree = "<group>"; };
-		40A9571A1C146DB200AF177E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40A957361C14859E00AF177E /* NBImageCropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NBImageCropperViewController.h; path = ../NBImageCropperViewController/NBImageCropperViewController.h; sourceTree = "<group>"; };
+		40A957371C14859E00AF177E /* NBImageCropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NBImageCropperViewController.m; path = ../NBImageCropperViewController/NBImageCropperViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,8 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				40A956F21C146DB200AF177E /* NBCropperImageViewController */,
-				40A9570C1C146DB200AF177E /* NBCropperImageViewControllerTests */,
-				40A957171C146DB200AF177E /* NBCropperImageViewControllerUITests */,
 				40A956F11C146DB200AF177E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				40A956F61C146DB200AF177E /* AppDelegate.h */,
+				40A957361C14859E00AF177E /* NBImageCropperViewController.h */,
+				40A957371C14859E00AF177E /* NBImageCropperViewController.m */,
 				40A956F71C146DB200AF177E /* AppDelegate.m */,
 				40A956F91C146DB200AF177E /* ViewController.h */,
 				40A956FA1C146DB200AF177E /* ViewController.m */,
@@ -120,24 +117,6 @@
 				40A956F41C146DB200AF177E /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		40A9570C1C146DB200AF177E /* NBCropperImageViewControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				40A9570D1C146DB200AF177E /* NBCropperImageViewControllerTests.m */,
-				40A9570F1C146DB200AF177E /* Info.plist */,
-			);
-			path = NBCropperImageViewControllerTests;
-			sourceTree = "<group>";
-		};
-		40A957171C146DB200AF177E /* NBCropperImageViewControllerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				40A957181C146DB200AF177E /* NBCropperImageViewControllerUITests.m */,
-				40A9571A1C146DB200AF177E /* Info.plist */,
-			);
-			path = NBCropperImageViewControllerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +249,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40A957381C14859E00AF177E /* NBImageCropperViewController.m in Sources */,
 				40A956FB1C146DB200AF177E /* ViewController.m in Sources */,
 				40A956F81C146DB200AF177E /* AppDelegate.m in Sources */,
 				40A956F51C146DB200AF177E /* main.m in Sources */,
@@ -280,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A9570E1C146DB200AF177E /* NBCropperImageViewControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A957191C146DB200AF177E /* NBCropperImageViewControllerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
